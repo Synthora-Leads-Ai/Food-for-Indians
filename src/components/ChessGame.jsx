@@ -245,15 +245,15 @@ const ChessGame = () => {
   };
 
   return (
-    <div className="w-full h-full flex items-center justify-center p-4">
+    <div className="w-full h-full flex items-center justify-center p-2 sm:p-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="relative"
+        className="relative w-full max-w-[320px] sm:max-w-md"
       >
         {/* Chess Board */}
         <div 
-          className="grid grid-cols-8 gap-0 rounded-lg overflow-hidden shadow-2xl"
+          className="grid grid-cols-8 gap-0 rounded-lg overflow-hidden shadow-2xl aspect-square"
           style={{ 
             border: `4px solid ${theme.colors.primary}`,
             boxShadow: `0 0 30px ${theme.colors.glow}`
@@ -271,7 +271,7 @@ const ChessGame = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleSquareClick(rowIndex, colIndex)}
-                  className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center text-2xl sm:text-3xl font-bold transition-all cursor-pointer relative"
+                  className="w-full aspect-square flex items-center justify-center text-xl sm:text-2xl md:text-3xl font-bold transition-all cursor-pointer relative"
                   style={{
                     background: isSelected 
                       ? theme.colors.primary
