@@ -1,0 +1,153 @@
+================================================================================
+FOOD OF INDIANS — QUICK START GUIDE
+================================================================================
+
+🚀 GET STARTED IN 3 STEPS:
+
+1. INSTALL DEPENDENCIES
+   Open terminal in the 'food-of-indians' folder and run:
+   
+   npm install
+
+2. START DEVELOPMENT SERVER
+   
+   npm run dev
+   
+   The site will open at: http://localhost:3000
+
+3. BUILD FOR PRODUCTION
+   
+   npm run build
+   
+   Production files will be in the 'dist' folder.
+
+================================================================================
+📝 IMPORTANT: UPDATE THESE BEFORE GOING LIVE
+================================================================================
+
+1. CONTACT INFORMATION (src/config/restaurantData.js)
+   - Replace phone: "+91 XXXXX XXXXX" with actual number
+   - Replace whatsapp: "+91 XXXXX XXXXX" with actual WhatsApp number
+   - Replace email: "info@foodofindians.com" with actual email
+
+2. GOOGLE MAPS (src/pages/Contact.jsx)
+   - Get a Google Maps API key from: https://console.cloud.google.com
+   - Replace "YOUR_GOOGLE_MAPS_API_KEY" in Contact.jsx
+   - Or use Google Maps embed iframe code directly
+
+3. MENU PRICES (src/config/restaurantData.js)
+   - Update all prices from "₹XX-XX" to actual prices
+   - Confirm with restaurant owner
+
+4. IMAGES (Optional)
+   - Replace Unsplash URLs with actual restaurant photos
+   - Update in src/config/restaurantData.js
+
+================================================================================
+🎨 CUSTOMIZATION
+================================================================================
+
+COLORS (tailwind.config.js):
+- Saffron: #E8631A (primary)
+- Gold: #D4A017 (secondary)
+- Maroon: #6B1A1A (accent)
+- Cream: #FDF6E3 (background)
+
+FONTS (already loaded from Google Fonts):
+- Playfair Display (headings)
+- Cormorant Garamond (body text)
+- DM Sans (UI elements)
+
+================================================================================
+📦 DEPLOYMENT OPTIONS
+================================================================================
+
+OPTION 1: VERCEL (Recommended - Free)
+1. Push code to GitHub
+2. Go to vercel.com
+3. Import your GitHub repository
+4. Deploy (automatic)
+
+OPTION 2: NETLIFY (Free)
+1. Push code to GitHub
+2. Go to netlify.com
+3. Import repository
+4. Build command: npm run build
+5. Publish directory: dist
+
+OPTION 3: TRADITIONAL HOSTING
+1. Run: npm run build
+2. Upload 'dist' folder contents to your web host
+3. Point domain to the uploaded files
+
+================================================================================
+✅ CHECKLIST BEFORE LAUNCH
+================================================================================
+
+[ ] Updated phone numbers
+[ ] Updated email address
+[ ] Updated WhatsApp number
+[ ] Added Google Maps API key or embed code
+[ ] Confirmed all menu prices
+[ ] Tested contact form
+[ ] Tested on mobile devices
+[ ] Tested all page links
+[ ] Checked all images load correctly
+[ ] Verified floating action buttons work
+
+================================================================================
+🆘 NEED HELP?
+================================================================================
+
+Common Issues:
+
+1. "npm: command not found"
+   → Install Node.js from: https://nodejs.org
+
+2. Dependencies not installing
+   → Delete 'node_modules' folder and 'package-lock.json'
+   → Run: npm install again
+
+3. Port 3000 already in use
+   → Change port in vite.config.js or kill the process using port 3000
+
+4. Images not loading
+   → Check internet connection (images are from Unsplash CDN)
+   → Replace with local images if needed
+
+================================================================================
+📱 FEATURES INCLUDED
+================================================================================
+
+✅ 3D Lotus animation in hero
+✅ Smooth scroll animations
+✅ Responsive mobile design
+✅ Multi-page navigation
+✅ Category-based menu
+✅ Image gallery with lightbox
+✅ Contact form
+✅ Floating WhatsApp/Call buttons
+✅ Google Maps integration
+✅ SEO-friendly structure
+
+================================================================================
+🌟 WHAT'S NEXT? (PHASE 2 ENHANCEMENTS)
+================================================================================
+
+Want to add more features? Consider:
+
+1. Online Ordering System
+2. Table Booking System
+3. Customer Reviews Section
+4. Blog/News Section
+5. Multi-language Support (Hindi/English)
+6. Admin Dashboard
+7. Email Notifications
+8. Payment Gateway Integration
+
+================================================================================
+
+Made with 🙏 for Food of Indians by Jain Delight
+Jabalpur, Madhya Pradesh
+
+================================================================================
